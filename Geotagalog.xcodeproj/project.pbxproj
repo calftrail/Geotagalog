@@ -1,0 +1,1203 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D80238890FD8D6D800A0073C /* TLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D80238880FD8D6D800A0073C /* TLPhoto.m */; };
+		D805B70B0F4E2FF800574947 /* TLMapBevel.m in Sources */ = {isa = PBXBuildFile; fileRef = D805B70A0F4E2FF800574947 /* TLMapBevel.m */; };
+		D80663680FBE3F2000F19653 /* NSFileManager+TLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D80663670FBE3F2000F19653 /* NSFileManager+TLExtensions.m */; };
+		D80857610F4F95FD00CED120 /* Fontin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D80857600F4F95FD00CED120 /* Fontin-Regular.ttf */; };
+		D81373C60FA169DA002C3B23 /* TLNMEAFileConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = D81373C50FA169DA002C3B23 /* TLNMEAFileConversion.m */; };
+		D81373CE0FA16C1F002C3B23 /* TLGPXFileConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = D81373CD0FA16C1F002C3B23 /* TLGPXFileConversion.m */; };
+		D818FB0E0FBB3C3900E3207A /* ExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = D818FB0D0FBB3C3900E3207A /* ExportController.m */; };
+		D81A60B40FD5D1D50008EED3 /* TLImageCaptureItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D81A60B30FD5D1D50008EED3 /* TLImageCaptureItem.m */; };
+		D81A61450FD5E7810008EED3 /* PhotoSourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D81A61440FD5E7810008EED3 /* PhotoSourceController.m */; };
+		D81A61490FD5EDC90008EED3 /* TimeOffsetController.m in Sources */ = {isa = PBXBuildFile; fileRef = D81A61480FD5EDC90008EED3 /* TimeOffsetController.m */; };
+		D8216CA50F3401C600843521 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8216CA40F3401C600843521 /* Carbon.framework */; };
+		D827E71B109A627A00D75E14 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D827E71A109A627A00D75E14 /* Preferences.xib */; };
+		D82C3D7311387B370023C0C8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58150DA1D0A300B32029 /* MainMenu.xib */; };
+		D840B1B211373C49002476CE /* MetadataWorker.app in Resources */ = {isa = PBXBuildFile; fileRef = D840B1B111373C45002476CE /* MetadataWorker.app */; };
+		D84BDF480F9D184D007DDE7E /* LaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84BDF470F9D184D007DDE7E /* LaunchWindowController.m */; };
+		D84BE0040F9D4BC9007DDE7E /* TLNMEAFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D84BE0030F9D4BC9007DDE7E /* TLNMEAFile.m */; };
+		D84BE0080F9D4C3E007DDE7E /* TLNMEASentence.m in Sources */ = {isa = PBXBuildFile; fileRef = D84BE0070F9D4C3E007DDE7E /* TLNMEASentence.m */; };
+		D85522E90F4F32660011CD3B /* Launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85522E80F4F32660011CD3B /* Launch.xib */; };
+		D8649AD10F2AA31D00BCD0EB /* Project.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8649AD00F2AA31D00BCD0EB /* Project.xib */; };
+		D86770001080172400ADFBDD /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8676FFF1080172400ADFBDD /* Accelerate.framework */; };
+		D869CB740FD88AF900EE919A /* MetadataController.m in Sources */ = {isa = PBXBuildFile; fileRef = D869CB730FD88AF900EE919A /* MetadataController.m */; };
+		D871532F10B32BD50089477D /* TLSolidMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D871532E10B32BD50089477D /* TLSolidMapLayer.m */; };
+		D87DD7FD10B63BA800028199 /* TaskExport.m in Sources */ = {isa = PBXBuildFile; fileRef = D87DD7FC10B63BA800028199 /* TaskExport.m */; };
+		D87DD9C710B65BC600028199 /* NSDateFormatter+TLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D87DD9C610B65BC600028199 /* NSDateFormatter+TLAdditions.m */; };
+		D880A1CC1084F6EE00E2B145 /* TLIGCFileConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = D880A1CB1084F6EE00E2B145 /* TLIGCFileConversion.m */; };
+		D880A39510851C1400E2B145 /* Geotagalog-IGC.icns in Resources */ = {isa = PBXBuildFile; fileRef = D880A39410851C1400E2B145 /* Geotagalog-IGC.icns */; };
+		D88441780FB109510032FC9F /* Geotagalog-NMEA.icns in Resources */ = {isa = PBXBuildFile; fileRef = D88441750FB109510032FC9F /* Geotagalog-NMEA.icns */; };
+		D88441790FB109510032FC9F /* Geotagalog-TCX.icns in Resources */ = {isa = PBXBuildFile; fileRef = D88441760FB109510032FC9F /* Geotagalog-TCX.icns */; };
+		D884417A0FB109510032FC9F /* Geotagalog-GPX.icns in Resources */ = {isa = PBXBuildFile; fileRef = D88441770FB109510032FC9F /* Geotagalog-GPX.icns */; };
+		D892395E0FBC9C0E0059A1A8 /* TracklogWait.xib in Resources */ = {isa = PBXBuildFile; fileRef = D892395D0FBC9C0E0059A1A8 /* TracklogWait.xib */; };
+		D89239630FBC9DAC0059A1A8 /* TrackWaitWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D89239620FBC9DAC0059A1A8 /* TrackWaitWindowController.m */; };
+		D894E0CC0F6B256400ADFD01 /* Help in Resources */ = {isa = PBXBuildFile; fileRef = D894E0BD0F6B256400ADFD01 /* Help */; };
+		D895D078109B99A800B7D35A /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = D895D077109B99A800B7D35A /* PreferencesController.m */; };
+		D89866F30F40B76000D349B9 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89866F20F40B76000D349B9 /* Sparkle.framework */; };
+		D89867070F40B7B900D349B9 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D89866F20F40B76000D349B9 /* Sparkle.framework */; };
+		D89868530F40BB4600D349B9 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = D89868520F40BB4600D349B9 /* dsa_pub.pem */; };
+		D89868550F40BB4A00D349B9 /* Acknowledgments.html in Resources */ = {isa = PBXBuildFile; fileRef = D89868540F40BB4A00D349B9 /* Acknowledgments.html */; };
+		D89B66070F9E7FE800AC032E /* TLNMEAErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = D89B66060F9E7FE800AC032E /* TLNMEAErrors.m */; };
+		D89B66EE0F9EA7C700AC032E /* TLNMEASentenceDecoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D89B66ED0F9EA7C700AC032E /* TLNMEASentenceDecoding.m */; };
+		D8A4F50B0FCB524200489C49 /* TLImageCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A4F50A0FCB524200489C49 /* TLImageCapture.m */; };
+		D8AF2016106EC47100C35A41 /* NSURL+TLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AF2015106EC47100C35A41 /* NSURL+TLExtensions.m */; };
+		D8B5ED920F3266690075C338 /* Export.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B5ED910F3266690075C338 /* Export.xib */; };
+		D8B7823510050DDA00CC50A1 /* PhotoError.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B7823410050DDA00CC50A1 /* PhotoError.png */; };
+		D8BA94BB117CFB1500EF9DAC /* LaunchHelper.applescript in Sources */ = {isa = PBXBuildFile; fileRef = D8BA9499117CF87300EF9DAC /* LaunchHelper.applescript */; };
+		D8BFE1860F2A7E2C005C3B44 /* ProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE1850F2A7E2C005C3B44 /* ProjectController.m */; };
+		D8BFE2370F2A89FB005C3B44 /* TLMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2250F2A89FB005C3B44 /* TLMapLayer.m */; };
+		D8BFE2380F2A89FB005C3B44 /* TLInteractiveMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2270F2A89FB005C3B44 /* TLInteractiveMapLayer.m */; };
+		D8BFE2390F2A89FB005C3B44 /* TLMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE22A0F2A89FB005C3B44 /* TLMapView.m */; };
+		D8BFE23A0F2A89FB005C3B44 /* TLGraticuleMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE22C0F2A89FB005C3B44 /* TLGraticuleMapLayer.m */; };
+		D8BFE24B0F2A8A17005C3B44 /* TLProjection.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2430F2A8A17005C3B44 /* TLProjection.c */; };
+		D8BFE24C0F2A8A17005C3B44 /* TLProjectionGeoid.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2460F2A8A17005C3B44 /* TLProjectionGeoid.c */; };
+		D8BFE24D0F2A8A17005C3B44 /* TLProjectionParameters.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2490F2A8A17005C3B44 /* TLProjectionParameters.c */; };
+		D8BFE25E0F2A8A26005C3B44 /* TLArray.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2520F2A8A26005C3B44 /* TLArray.c */; };
+		D8BFE25F0F2A8A26005C3B44 /* TLPointerArray.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2550F2A8A26005C3B44 /* TLPointerArray.c */; };
+		D8BFE2600F2A8A26005C3B44 /* TLToolbag.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2570F2A8A26005C3B44 /* TLToolbag.c */; };
+		D8BFE2610F2A8A26005C3B44 /* TLFloat.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2590F2A8A26005C3B44 /* TLFloat.c */; };
+		D8BFE2620F2A8A26005C3B44 /* TLRandom.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE25B0F2A8A26005C3B44 /* TLRandom.c */; };
+		D8BFE2630F2A8A26005C3B44 /* TLMainThreadPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE25D0F2A8A26005C3B44 /* TLMainThreadPerformer.m */; };
+		D8BFE2890F2A8A3E005C3B44 /* TLSegment.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE26A0F2A8A3E005C3B44 /* TLSegment.c */; };
+		D8BFE28A0F2A8A3E005C3B44 /* TLPolygon.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE26C0F2A8A3E005C3B44 /* TLPolygon.c */; };
+		D8BFE28B0F2A8A3E005C3B44 /* TLMultiPolygon.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE26E0F2A8A3E005C3B44 /* TLMultiPolygon.c */; };
+		D8BFE28C0F2A8A3E005C3B44 /* TLGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2700F2A8A3E005C3B44 /* TLGeometry.c */; };
+		D8BFE28D0F2A8A3E005C3B44 /* TLCoordPolygon.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2740F2A8A3E005C3B44 /* TLCoordPolygon.c */; };
+		D8BFE28E0F2A8A3E005C3B44 /* TLMultiCoordPolygon.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2760F2A8A3E005C3B44 /* TLMultiCoordPolygon.c */; };
+		D8BFE28F0F2A8A3E005C3B44 /* TLCoordGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2780F2A8A3E005C3B44 /* TLCoordGeometry.c */; };
+		D8BFE2900F2A8A3E005C3B44 /* TLGeoidGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE27C0F2A8A3E005C3B44 /* TLGeoidGeometry.c */; };
+		D8BFE2910F2A8A3E005C3B44 /* TLExtent.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2800F2A8A3E005C3B44 /* TLExtent.c */; };
+		D8BFE2920F2A8A3E005C3B44 /* CTProjection.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2820F2A8A3E005C3B44 /* CTProjection.m */; };
+		D8BFE2930F2A8A3E005C3B44 /* TLProjectionInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2840F2A8A3E005C3B44 /* TLProjectionInfo.c */; };
+		D8BFE2940F2A8A3E005C3B44 /* TLProjectionGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2860F2A8A3E005C3B44 /* TLProjectionGeometry.m */; };
+		D8BFE2950F2A8A3E005C3B44 /* TLProjectedDrawing.c in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2880F2A8A3E005C3B44 /* TLProjectedDrawing.c */; };
+		D8BFE2A70F2A8A50005C3B44 /* TLCocoaToolbag.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE29E0F2A8A50005C3B44 /* TLCocoaToolbag.m */; };
+		D8BFE2A80F2A8A50005C3B44 /* TLSelectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2A00F2A8A50005C3B44 /* TLSelectionManager.m */; };
+		D8BFE2A90F2A8A50005C3B44 /* TLTrackingZone.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2A20F2A8A50005C3B44 /* TLTrackingZone.m */; };
+		D8BFE2AA0F2A8A50005C3B44 /* TLTrackingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE2A40F2A8A50005C3B44 /* TLTrackingManager.m */; };
+		D8BFE2D10F2A8B01005C3B44 /* liblibproj4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BFE2CB0F2A8AEE005C3B44 /* liblibproj4.a */; };
+		D8BFE2FB0F2A8C56005C3B44 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BFE2FA0F2A8C56005C3B44 /* QuartzCore.framework */; };
+		D8BFE38A0F2A950D005C3B44 /* TLGPXNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE3810F2A950D005C3B44 /* TLGPXNode.m */; };
+		D8BFE38B0F2A950D005C3B44 /* TLGPXFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE3830F2A950D005C3B44 /* TLGPXFile.m */; };
+		D8BFE38C0F2A950D005C3B44 /* TLGPXWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE3850F2A950D005C3B44 /* TLGPXWaypoint.m */; };
+		D8BFE38D0F2A950D005C3B44 /* TLGPXTrackSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE3870F2A950D005C3B44 /* TLGPXTrackSegment.m */; };
+		D8BFE38E0F2A950D005C3B44 /* TLGPXTracklog.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE3890F2A950D005C3B44 /* TLGPXTracklog.m */; };
+		D8BFE39C0F2A9D0A005C3B44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFE39B0F2A9D0A005C3B44 /* AppDelegate.m */; };
+		D8C45B0B0FD98ABA0068215F /* TLFilePhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C45B0A0FD98ABA0068215F /* TLFilePhotoSource.m */; };
+		D8C45B180FD99AA60068215F /* TLFileSourceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C45B170FD99AA60068215F /* TLFileSourceItem.m */; };
+		D8CDE4000F78705100D7F111 /* Geotagalog.icns in Resources */ = {isa = PBXBuildFile; fileRef = D8CDE3FF0F78705100D7F111 /* Geotagalog.icns */; };
+		D8D257170FA24EE2006D8B40 /* TLTCXFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D257160FA24EE2006D8B40 /* TLTCXFile.m */; };
+		D8D2573E0FA2613F006D8B40 /* TLTCXFileConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2573D0FA2613F006D8B40 /* TLTCXFileConversion.m */; };
+		D8D5C9FE108E68BB000F09D8 /* helpbook.css in Resources */ = {isa = PBXBuildFile; fileRef = D8D5C9FD108E68BB000F09D8 /* helpbook.css */; };
+		D8E06B710FD474CF00443EAA /* TLPhotoSourceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E06B700FD474CF00443EAA /* TLPhotoSourceItem.m */; };
+		D8E77D080F3400A9004DE35E /* TLImageCapturePhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E77D040F3400A9004DE35E /* TLImageCapturePhotoSource.m */; };
+		D8E77D090F3400A9004DE35E /* TLImageCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E77D060F3400A9004DE35E /* TLImageCaptureManager.m */; };
+		D8E81F350F2E50900078D028 /* TLPhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E81F340F2E50900078D028 /* TLPhotoSource.m */; };
+		D8E8202E0F2E704C0078D028 /* TLPhotoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E8202D0F2E704C0078D028 /* TLPhotoLayout.m */; };
+		D8E820380F2E70F50078D028 /* TLMercatalogStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E820370F2E70F50078D028 /* TLMercatalogStyler.m */; };
+		D8E8203D0F2E71090078D028 /* TLPhotoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E8203C0F2E71090078D028 /* TLPhotoLayer.m */; };
+		D8E820410F2E711A0078D028 /* TLTrackLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E820400F2E711A0078D028 /* TLTrackLayer.m */; };
+		D8E820A10F2E79410078D028 /* TLLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E820A00F2E79410078D028 /* TLLocator.m */; };
+		D8F67E0D108160D9000E41F4 /* TLIGCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F67E0C108160D9000E41F4 /* TLIGCFile.m */; };
+		D8F67E4310816CC2000E41F4 /* TLLineParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F67E4210816CC2000E41F4 /* TLLineParser.m */; };
+		D8F7CB530F2BF8EC003C0C0B /* TLTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F7CB520F2BF8EC003C0C0B /* TLTrack.m */; };
+		D8F7CB5A0F2BF90D003C0C0B /* TLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F7CB550F2BF90D003C0C0B /* TLLocation.m */; };
+		D8F7CB5B0F2BF90D003C0C0B /* TLTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F7CB570F2BF90D003C0C0B /* TLTimestamp.m */; };
+		D8F7CB5C0F2BF90D003C0C0B /* TLWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F7CB590F2BF90D003C0C0B /* TLWaypoint.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D840B1B011373C45002476CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D840B1A911373C44002476CE /* MetadataWorker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = MetadataWorker;
+		};
+		D840B1C711373C5E002476CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D840B1A911373C44002476CE /* MetadataWorker.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = MetadataWorker;
+		};
+		D8BFE2CA0F2A8AEE005C3B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8BFE2C20F2A8AEE005C3B44 /* libproj4.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = libproj4;
+		};
+		D8BFE2CC0F2A8AEE005C3B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8BFE2C20F2A8AEE005C3B44 /* libproj4.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8CD891A0D57BD590039F3F8;
+			remoteInfo = "lproj (CLI)";
+		};
+		D8BFE2D40F2A8B14005C3B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8BFE2C20F2A8AEE005C3B44 /* libproj4.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = libproj4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D898670B0F40B7C500D349B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D89867070F40B7B900D349B9 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Geotagalog_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geotagalog_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Geotagalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geotagalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80238870FD8D6D800A0073C /* TLPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPhoto.h; sourceTree = "<group>"; };
+		D80238880FD8D6D800A0073C /* TLPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPhoto.m; sourceTree = "<group>"; };
+		D805B7090F4E2FF800574947 /* TLMapBevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMapBevel.h; sourceTree = "<group>"; };
+		D805B70A0F4E2FF800574947 /* TLMapBevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMapBevel.m; sourceTree = "<group>"; };
+		D80663660FBE3F2000F19653 /* NSFileManager+TLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+TLExtensions.h"; sourceTree = "<group>"; };
+		D80663670FBE3F2000F19653 /* NSFileManager+TLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+TLExtensions.m"; sourceTree = "<group>"; };
+		D80857600F4F95FD00CED120 /* Fontin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontin-Regular.ttf"; sourceTree = "<group>"; };
+		D81373C40FA169DA002C3B23 /* TLNMEAFileConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNMEAFileConversion.h; sourceTree = "<group>"; };
+		D81373C50FA169DA002C3B23 /* TLNMEAFileConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNMEAFileConversion.m; sourceTree = "<group>"; };
+		D81373CC0FA16C1F002C3B23 /* TLGPXFileConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGPXFileConversion.h; sourceTree = "<group>"; };
+		D81373CD0FA16C1F002C3B23 /* TLGPXFileConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGPXFileConversion.m; sourceTree = "<group>"; };
+		D818FB0C0FBB3C3900E3207A /* ExportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportController.h; sourceTree = "<group>"; };
+		D818FB0D0FBB3C3900E3207A /* ExportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExportController.m; sourceTree = "<group>"; };
+		D81A60B20FD5D1D50008EED3 /* TLImageCaptureItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLImageCaptureItem.h; sourceTree = "<group>"; };
+		D81A60B30FD5D1D50008EED3 /* TLImageCaptureItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLImageCaptureItem.m; sourceTree = "<group>"; };
+		D81A61430FD5E7810008EED3 /* PhotoSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSourceController.h; sourceTree = "<group>"; };
+		D81A61440FD5E7810008EED3 /* PhotoSourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSourceController.m; sourceTree = "<group>"; };
+		D81A61470FD5EDC90008EED3 /* TimeOffsetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeOffsetController.h; sourceTree = "<group>"; };
+		D81A61480FD5EDC90008EED3 /* TimeOffsetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeOffsetController.m; sourceTree = "<group>"; };
+		D8216CA40F3401C600843521 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		D827E71A109A627A00D75E14 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		D840B1A911373C44002476CE /* MetadataWorker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MetadataWorker.xcodeproj; path = MetadataWorker/MetadataWorker.xcodeproj; sourceTree = "<group>"; };
+		D84A803C108E68F300EB825F /* helpbook.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = helpbook.css; sourceTree = "<group>"; };
+		D84A803E108E68FE00EB825F /* Geotagalog16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Geotagalog16.png; sourceTree = "<group>"; };
+		D84BDF460F9D184D007DDE7E /* LaunchWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchWindowController.h; sourceTree = "<group>"; };
+		D84BDF470F9D184D007DDE7E /* LaunchWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchWindowController.m; sourceTree = "<group>"; };
+		D84BE0020F9D4BC9007DDE7E /* TLNMEAFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNMEAFile.h; sourceTree = "<group>"; };
+		D84BE0030F9D4BC9007DDE7E /* TLNMEAFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNMEAFile.m; sourceTree = "<group>"; };
+		D84BE0060F9D4C3E007DDE7E /* TLNMEASentence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNMEASentence.h; sourceTree = "<group>"; };
+		D84BE0070F9D4C3E007DDE7E /* TLNMEASentence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNMEASentence.m; sourceTree = "<group>"; };
+		D85522E80F4F32660011CD3B /* Launch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Launch.xib; sourceTree = "<group>"; };
+		D85CAE1F0F81584200E26623 /* Geotagalog help.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Geotagalog help.xml"; sourceTree = "<group>"; };
+		D85CAE210F81584200E26623 /* helpbook.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = helpbook.xsl; sourceTree = "<group>"; };
+		D8649AD00F2AA31D00BCD0EB /* Project.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Project.xib; sourceTree = "<group>"; };
+		D8676FFF1080172400ADFBDD /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D869CB720FD88AF900EE919A /* MetadataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetadataController.h; sourceTree = "<group>"; };
+		D869CB730FD88AF900EE919A /* MetadataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetadataController.m; sourceTree = "<group>"; };
+		D871532D10B32BD50089477D /* TLSolidMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSolidMapLayer.h; sourceTree = "<group>"; };
+		D871532E10B32BD50089477D /* TLSolidMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLSolidMapLayer.m; sourceTree = "<group>"; };
+		D87DD7FB10B63BA800028199 /* TaskExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskExport.h; sourceTree = "<group>"; };
+		D87DD7FC10B63BA800028199 /* TaskExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskExport.m; sourceTree = "<group>"; };
+		D87DD9C510B65BC600028199 /* NSDateFormatter+TLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+TLAdditions.h"; sourceTree = "<group>"; };
+		D87DD9C610B65BC600028199 /* NSDateFormatter+TLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+TLAdditions.m"; sourceTree = "<group>"; };
+		D880A1CA1084F6EE00E2B145 /* TLIGCFileConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLIGCFileConversion.h; sourceTree = "<group>"; };
+		D880A1CB1084F6EE00E2B145 /* TLIGCFileConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLIGCFileConversion.m; sourceTree = "<group>"; };
+		D880A39410851C1400E2B145 /* Geotagalog-IGC.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Geotagalog-IGC.icns"; path = "Resources/Geotagalog-IGC.icns"; sourceTree = "<group>"; };
+		D88441750FB109510032FC9F /* Geotagalog-NMEA.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Geotagalog-NMEA.icns"; path = "Resources/Geotagalog-NMEA.icns"; sourceTree = "<group>"; };
+		D88441760FB109510032FC9F /* Geotagalog-TCX.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Geotagalog-TCX.icns"; path = "Resources/Geotagalog-TCX.icns"; sourceTree = "<group>"; };
+		D88441770FB109510032FC9F /* Geotagalog-GPX.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Geotagalog-GPX.icns"; path = "Resources/Geotagalog-GPX.icns"; sourceTree = "<group>"; };
+		D892395D0FBC9C0E0059A1A8 /* TracklogWait.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TracklogWait.xib; sourceTree = "<group>"; };
+		D89239610FBC9DAC0059A1A8 /* TrackWaitWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackWaitWindowController.h; sourceTree = "<group>"; };
+		D89239620FBC9DAC0059A1A8 /* TrackWaitWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackWaitWindowController.m; sourceTree = "<group>"; };
+		D894E0BD0F6B256400ADFD01 /* Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Help; sourceTree = "<group>"; };
+		D895D076109B99A800B7D35A /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
+		D895D077109B99A800B7D35A /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
+		D89866F20F40B76000D349B9 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Dependencies/Sparkle.framework; sourceTree = "<group>"; };
+		D89868520F40BB4600D349B9 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Resources/dsa_pub.pem; sourceTree = "<group>"; };
+		D89868540F40BB4A00D349B9 /* Acknowledgments.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Acknowledgments.html; path = Resources/Acknowledgments.html; sourceTree = "<group>"; };
+		D89B66050F9E7FE800AC032E /* TLNMEAErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNMEAErrors.h; sourceTree = "<group>"; };
+		D89B66060F9E7FE800AC032E /* TLNMEAErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNMEAErrors.m; sourceTree = "<group>"; };
+		D89B66EC0F9EA7C700AC032E /* TLNMEASentenceDecoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNMEASentenceDecoding.h; sourceTree = "<group>"; };
+		D89B66ED0F9EA7C700AC032E /* TLNMEASentenceDecoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNMEASentenceDecoding.m; sourceTree = "<group>"; };
+		D8A4F5090FCB524200489C49 /* TLImageCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLImageCapture.h; sourceTree = "<group>"; };
+		D8A4F50A0FCB524200489C49 /* TLImageCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLImageCapture.m; sourceTree = "<group>"; };
+		D8AF2014106EC47100C35A41 /* NSURL+TLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+TLExtensions.h"; sourceTree = "<group>"; };
+		D8AF2015106EC47100C35A41 /* NSURL+TLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+TLExtensions.m"; sourceTree = "<group>"; };
+		D8B5ED910F3266690075C338 /* Export.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Export.xib; sourceTree = "<group>"; };
+		D8B7823410050DDA00CC50A1 /* PhotoError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PhotoError.png; path = Resources/PhotoError.png; sourceTree = "<group>"; };
+		D8BA9499117CF87300EF9DAC /* LaunchHelper.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = LaunchHelper.applescript; sourceTree = "<group>"; };
+		D8BFE1840F2A7E2C005C3B44 /* ProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectController.h; sourceTree = "<group>"; };
+		D8BFE1850F2A7E2C005C3B44 /* ProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectController.m; sourceTree = "<group>"; };
+		D8BFE2220F2A89FB005C3B44 /* TLMapInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMapInfo.h; sourceTree = "<group>"; };
+		D8BFE2230F2A89FB005C3B44 /* TLMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMapLayer.h; sourceTree = "<group>"; };
+		D8BFE2240F2A89FB005C3B44 /* TLMapLayer+HostInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TLMapLayer+HostInternals.h"; sourceTree = "<group>"; };
+		D8BFE2250F2A89FB005C3B44 /* TLMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMapLayer.m; sourceTree = "<group>"; };
+		D8BFE2260F2A89FB005C3B44 /* TLInteractiveMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLInteractiveMapLayer.h; sourceTree = "<group>"; };
+		D8BFE2270F2A89FB005C3B44 /* TLInteractiveMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLInteractiveMapLayer.m; sourceTree = "<group>"; };
+		D8BFE2280F2A89FB005C3B44 /* TLMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMapView.h; sourceTree = "<group>"; };
+		D8BFE2290F2A89FB005C3B44 /* TLMapView+HostInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TLMapView+HostInternals.h"; sourceTree = "<group>"; };
+		D8BFE22A0F2A89FB005C3B44 /* TLMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMapView.m; sourceTree = "<group>"; };
+		D8BFE22B0F2A89FB005C3B44 /* TLGraticuleMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGraticuleMapLayer.h; sourceTree = "<group>"; };
+		D8BFE22C0F2A89FB005C3B44 /* TLGraticuleMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGraticuleMapLayer.m; sourceTree = "<group>"; };
+		D8BFE2420F2A8A17005C3B44 /* TLProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjection.h; sourceTree = "<group>"; };
+		D8BFE2430F2A8A17005C3B44 /* TLProjection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLProjection.c; sourceTree = "<group>"; };
+		D8BFE2440F2A8A17005C3B44 /* TLProjectionGeoid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionGeoid.h; sourceTree = "<group>"; };
+		D8BFE2450F2A8A17005C3B44 /* TLProjectionGeoidInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionGeoidInternals.h; sourceTree = "<group>"; };
+		D8BFE2460F2A8A17005C3B44 /* TLProjectionGeoid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLProjectionGeoid.c; sourceTree = "<group>"; };
+		D8BFE2470F2A8A17005C3B44 /* TLProjectionParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionParameters.h; sourceTree = "<group>"; };
+		D8BFE2480F2A8A17005C3B44 /* TLProjectionParametersInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionParametersInternal.h; sourceTree = "<group>"; };
+		D8BFE2490F2A8A17005C3B44 /* TLProjectionParameters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLProjectionParameters.c; sourceTree = "<group>"; };
+		D8BFE24A0F2A8A17005C3B44 /* TLProjectionDataRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionDataRepresentation.h; sourceTree = "<group>"; };
+		D8BFE2500F2A8A26005C3B44 /* TLPrimitiveTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPrimitiveTypes.h; sourceTree = "<group>"; };
+		D8BFE2510F2A8A26005C3B44 /* TLArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLArray.h; sourceTree = "<group>"; };
+		D8BFE2520F2A8A26005C3B44 /* TLArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLArray.c; sourceTree = "<group>"; };
+		D8BFE2530F2A8A26005C3B44 /* TLArrayTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLArrayTemplate.h; sourceTree = "<group>"; };
+		D8BFE2540F2A8A26005C3B44 /* TLPointerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPointerArray.h; sourceTree = "<group>"; };
+		D8BFE2550F2A8A26005C3B44 /* TLPointerArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLPointerArray.c; sourceTree = "<group>"; };
+		D8BFE2560F2A8A26005C3B44 /* TLToolbag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLToolbag.h; sourceTree = "<group>"; };
+		D8BFE2570F2A8A26005C3B44 /* TLToolbag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLToolbag.c; sourceTree = "<group>"; };
+		D8BFE2580F2A8A26005C3B44 /* TLFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLFloat.h; sourceTree = "<group>"; };
+		D8BFE2590F2A8A26005C3B44 /* TLFloat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLFloat.c; sourceTree = "<group>"; };
+		D8BFE25A0F2A8A26005C3B44 /* TLRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLRandom.h; sourceTree = "<group>"; };
+		D8BFE25B0F2A8A26005C3B44 /* TLRandom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLRandom.c; sourceTree = "<group>"; };
+		D8BFE25C0F2A8A26005C3B44 /* TLMainThreadPerformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMainThreadPerformer.h; sourceTree = "<group>"; };
+		D8BFE25D0F2A8A26005C3B44 /* TLMainThreadPerformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMainThreadPerformer.m; sourceTree = "<group>"; };
+		D8BFE2690F2A8A3E005C3B44 /* TLSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSegment.h; sourceTree = "<group>"; };
+		D8BFE26A0F2A8A3E005C3B44 /* TLSegment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLSegment.c; sourceTree = "<group>"; };
+		D8BFE26B0F2A8A3E005C3B44 /* TLPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPolygon.h; sourceTree = "<group>"; };
+		D8BFE26C0F2A8A3E005C3B44 /* TLPolygon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLPolygon.c; sourceTree = "<group>"; };
+		D8BFE26D0F2A8A3E005C3B44 /* TLMultiPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMultiPolygon.h; sourceTree = "<group>"; };
+		D8BFE26E0F2A8A3E005C3B44 /* TLMultiPolygon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLMultiPolygon.c; sourceTree = "<group>"; };
+		D8BFE26F0F2A8A3E005C3B44 /* TLGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGeometry.h; sourceTree = "<group>"; };
+		D8BFE2700F2A8A3E005C3B44 /* TLGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLGeometry.c; sourceTree = "<group>"; };
+		D8BFE2720F2A8A3E005C3B44 /* TLCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCoordinate.h; sourceTree = "<group>"; };
+		D8BFE2730F2A8A3E005C3B44 /* TLCoordPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCoordPolygon.h; sourceTree = "<group>"; };
+		D8BFE2740F2A8A3E005C3B44 /* TLCoordPolygon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLCoordPolygon.c; sourceTree = "<group>"; };
+		D8BFE2750F2A8A3E005C3B44 /* TLMultiCoordPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMultiCoordPolygon.h; sourceTree = "<group>"; };
+		D8BFE2760F2A8A3E005C3B44 /* TLMultiCoordPolygon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLMultiCoordPolygon.c; sourceTree = "<group>"; };
+		D8BFE2770F2A8A3E005C3B44 /* TLCoordGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCoordGeometry.h; sourceTree = "<group>"; };
+		D8BFE2780F2A8A3E005C3B44 /* TLCoordGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLCoordGeometry.c; sourceTree = "<group>"; };
+		D8BFE27A0F2A8A3E005C3B44 /* TLPlanetPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPlanetPoint.h; sourceTree = "<group>"; };
+		D8BFE27B0F2A8A3E005C3B44 /* TLGeoidGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGeoidGeometry.h; sourceTree = "<group>"; };
+		D8BFE27C0F2A8A3E005C3B44 /* TLGeoidGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLGeoidGeometry.c; sourceTree = "<group>"; };
+		D8BFE27E0F2A8A3E005C3B44 /* TLBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBounds.h; sourceTree = "<group>"; };
+		D8BFE27F0F2A8A3E005C3B44 /* TLExtent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLExtent.h; sourceTree = "<group>"; };
+		D8BFE2800F2A8A3E005C3B44 /* TLExtent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLExtent.c; sourceTree = "<group>"; };
+		D8BFE2810F2A8A3E005C3B44 /* CTProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTProjection.h; sourceTree = "<group>"; };
+		D8BFE2820F2A8A3E005C3B44 /* CTProjection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTProjection.m; sourceTree = "<group>"; };
+		D8BFE2830F2A8A3E005C3B44 /* TLProjectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionInfo.h; sourceTree = "<group>"; };
+		D8BFE2840F2A8A3E005C3B44 /* TLProjectionInfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLProjectionInfo.c; sourceTree = "<group>"; };
+		D8BFE2850F2A8A3E005C3B44 /* TLProjectionGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectionGeometry.h; sourceTree = "<group>"; };
+		D8BFE2860F2A8A3E005C3B44 /* TLProjectionGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLProjectionGeometry.m; sourceTree = "<group>"; };
+		D8BFE2870F2A8A3E005C3B44 /* TLProjectedDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProjectedDrawing.h; sourceTree = "<group>"; };
+		D8BFE2880F2A8A3E005C3B44 /* TLProjectedDrawing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLProjectedDrawing.c; sourceTree = "<group>"; };
+		D8BFE29D0F2A8A50005C3B44 /* TLCocoaToolbag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCocoaToolbag.h; sourceTree = "<group>"; };
+		D8BFE29E0F2A8A50005C3B44 /* TLCocoaToolbag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCocoaToolbag.m; sourceTree = "<group>"; };
+		D8BFE29F0F2A8A50005C3B44 /* TLSelectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSelectionManager.h; sourceTree = "<group>"; };
+		D8BFE2A00F2A8A50005C3B44 /* TLSelectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLSelectionManager.m; sourceTree = "<group>"; };
+		D8BFE2A10F2A8A50005C3B44 /* TLTrackingZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTrackingZone.h; sourceTree = "<group>"; };
+		D8BFE2A20F2A8A50005C3B44 /* TLTrackingZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTrackingZone.m; sourceTree = "<group>"; };
+		D8BFE2A30F2A8A50005C3B44 /* TLTrackingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTrackingManager.h; sourceTree = "<group>"; };
+		D8BFE2A40F2A8A50005C3B44 /* TLTrackingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTrackingManager.m; sourceTree = "<group>"; };
+		D8BFE2C20F2A8AEE005C3B44 /* libproj4.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libproj4.xcodeproj; path = Dependencies/libproj4.xcodeproj; sourceTree = "<group>"; };
+		D8BFE2CE0F2A8AF7005C3B44 /* lib_proj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lib_proj.h; path = Dependencies/libproj4/lib_proj.h; sourceTree = "<group>"; };
+		D8BFE2FA0F2A8C56005C3B44 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		D8BFE3800F2A950D005C3B44 /* TLGPXNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGPXNode.h; sourceTree = "<group>"; };
+		D8BFE3810F2A950D005C3B44 /* TLGPXNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGPXNode.m; sourceTree = "<group>"; };
+		D8BFE3820F2A950D005C3B44 /* TLGPXFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGPXFile.h; sourceTree = "<group>"; };
+		D8BFE3830F2A950D005C3B44 /* TLGPXFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGPXFile.m; sourceTree = "<group>"; };
+		D8BFE3840F2A950D005C3B44 /* TLGPXWaypoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGPXWaypoint.h; sourceTree = "<group>"; };
+		D8BFE3850F2A950D005C3B44 /* TLGPXWaypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGPXWaypoint.m; sourceTree = "<group>"; };
+		D8BFE3860F2A950D005C3B44 /* TLGPXTrackSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGPXTrackSegment.h; sourceTree = "<group>"; };
+		D8BFE3870F2A950D005C3B44 /* TLGPXTrackSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGPXTrackSegment.m; sourceTree = "<group>"; };
+		D8BFE3880F2A950D005C3B44 /* TLGPXTracklog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGPXTracklog.h; sourceTree = "<group>"; };
+		D8BFE3890F2A950D005C3B44 /* TLGPXTracklog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGPXTracklog.m; sourceTree = "<group>"; };
+		D8BFE39A0F2A9D0A005C3B44 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8BFE39B0F2A9D0A005C3B44 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8C45B090FD98ABA0068215F /* TLFilePhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLFilePhotoSource.h; sourceTree = "<group>"; };
+		D8C45B0A0FD98ABA0068215F /* TLFilePhotoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLFilePhotoSource.m; sourceTree = "<group>"; };
+		D8C45B160FD99AA60068215F /* TLFileSourceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLFileSourceItem.h; sourceTree = "<group>"; };
+		D8C45B170FD99AA60068215F /* TLFileSourceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLFileSourceItem.m; sourceTree = "<group>"; };
+		D8CDE3FF0F78705100D7F111 /* Geotagalog.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Geotagalog.icns; path = Resources/Geotagalog.icns; sourceTree = "<group>"; };
+		D8D257150FA24EE2006D8B40 /* TLTCXFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTCXFile.h; sourceTree = "<group>"; };
+		D8D257160FA24EE2006D8B40 /* TLTCXFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTCXFile.m; sourceTree = "<group>"; };
+		D8D2573C0FA2613F006D8B40 /* TLTCXFileConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTCXFileConversion.h; sourceTree = "<group>"; };
+		D8D2573D0FA2613F006D8B40 /* TLTCXFileConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTCXFileConversion.m; sourceTree = "<group>"; };
+		D8D5C9FD108E68BB000F09D8 /* helpbook.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = helpbook.css; path = HelpSource/helpbook.css; sourceTree = "<group>"; };
+		D8E06B6F0FD474CF00443EAA /* TLPhotoSourceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPhotoSourceItem.h; sourceTree = "<group>"; };
+		D8E06B700FD474CF00443EAA /* TLPhotoSourceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPhotoSourceItem.m; sourceTree = "<group>"; };
+		D8E77D040F3400A9004DE35E /* TLImageCapturePhotoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLImageCapturePhotoSource.m; sourceTree = "<group>"; };
+		D8E77D050F3400A9004DE35E /* TLImageCapturePhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLImageCapturePhotoSource.h; sourceTree = "<group>"; };
+		D8E77D060F3400A9004DE35E /* TLImageCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLImageCaptureManager.m; sourceTree = "<group>"; };
+		D8E77D070F3400A9004DE35E /* TLImageCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLImageCaptureManager.h; sourceTree = "<group>"; };
+		D8E81F330F2E50900078D028 /* TLPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPhotoSource.h; sourceTree = "<group>"; };
+		D8E81F340F2E50900078D028 /* TLPhotoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPhotoSource.m; sourceTree = "<group>"; };
+		D8E8202B0F2E703C0078D028 /* TLMercatalogViewShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMercatalogViewShared.h; sourceTree = "<group>"; };
+		D8E8202C0F2E704C0078D028 /* TLPhotoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPhotoLayout.h; sourceTree = "<group>"; };
+		D8E8202D0F2E704C0078D028 /* TLPhotoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPhotoLayout.m; sourceTree = "<group>"; };
+		D8E820360F2E70F50078D028 /* TLMercatalogStyler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMercatalogStyler.h; sourceTree = "<group>"; };
+		D8E820370F2E70F50078D028 /* TLMercatalogStyler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMercatalogStyler.m; sourceTree = "<group>"; };
+		D8E8203B0F2E71090078D028 /* TLPhotoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPhotoLayer.h; sourceTree = "<group>"; };
+		D8E8203C0F2E71090078D028 /* TLPhotoLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPhotoLayer.m; sourceTree = "<group>"; };
+		D8E8203F0F2E711A0078D028 /* TLTrackLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTrackLayer.h; sourceTree = "<group>"; };
+		D8E820400F2E711A0078D028 /* TLTrackLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTrackLayer.m; sourceTree = "<group>"; };
+		D8E8209F0F2E79410078D028 /* TLLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLocator.h; sourceTree = "<group>"; };
+		D8E820A00F2E79410078D028 /* TLLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLocator.m; sourceTree = "<group>"; };
+		D8F67E0B108160D9000E41F4 /* TLIGCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLIGCFile.h; sourceTree = "<group>"; };
+		D8F67E0C108160D9000E41F4 /* TLIGCFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLIGCFile.m; sourceTree = "<group>"; };
+		D8F67E4110816CC2000E41F4 /* TLLineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLineParser.h; sourceTree = "<group>"; };
+		D8F67E4210816CC2000E41F4 /* TLLineParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLineParser.m; sourceTree = "<group>"; };
+		D8F7CB510F2BF8EC003C0C0B /* TLTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTrack.h; sourceTree = "<group>"; };
+		D8F7CB520F2BF8EC003C0C0B /* TLTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTrack.m; sourceTree = "<group>"; };
+		D8F7CB540F2BF90D003C0C0B /* TLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLocation.h; sourceTree = "<group>"; };
+		D8F7CB550F2BF90D003C0C0B /* TLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLocation.m; sourceTree = "<group>"; };
+		D8F7CB560F2BF90D003C0C0B /* TLTimestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimestamp.h; sourceTree = "<group>"; };
+		D8F7CB570F2BF90D003C0C0B /* TLTimestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimestamp.m; sourceTree = "<group>"; };
+		D8F7CB580F2BF90D003C0C0B /* TLWaypoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLWaypoint.h; sourceTree = "<group>"; };
+		D8F7CB590F2BF90D003C0C0B /* TLWaypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLWaypoint.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				D8BFE2D10F2A8B01005C3B44 /* liblibproj4.a in Frameworks */,
+				D8BFE2FB0F2A8C56005C3B44 /* QuartzCore.framework in Frameworks */,
+				D8216CA50F3401C600843521 /* Carbon.framework in Frameworks */,
+				D89866F30F40B76000D349B9 /* Sparkle.framework in Frameworks */,
+				D86770001080172400ADFBDD /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Geotagalog */ = {
+			isa = PBXGroup;
+			children = (
+				D87DD9C410B65BA200028199 /* Cocoa extensions */,
+				D8E81F410F2E58EA0078D028 /* Photo sources */,
+				D84BE0010F9D4BBA007DDE7E /* NMEA */,
+				D8F67E09108160CB000E41F4 /* IGC */,
+				D8BFE37F0F2A950D005C3B44 /* GPX */,
+				D8D257140FA24ECE006D8B40 /* TCX */,
+				D8BFE39A0F2A9D0A005C3B44 /* AppDelegate.h */,
+				D8BFE39B0F2A9D0A005C3B44 /* AppDelegate.m */,
+				D8BFE1840F2A7E2C005C3B44 /* ProjectController.h */,
+				D8BFE1850F2A7E2C005C3B44 /* ProjectController.m */,
+				D895D076109B99A800B7D35A /* PreferencesController.h */,
+				D895D077109B99A800B7D35A /* PreferencesController.m */,
+				D805B7090F4E2FF800574947 /* TLMapBevel.h */,
+				D805B70A0F4E2FF800574947 /* TLMapBevel.m */,
+				D8E8209F0F2E79410078D028 /* TLLocator.h */,
+				D8E820A00F2E79410078D028 /* TLLocator.m */,
+				D80238870FD8D6D800A0073C /* TLPhoto.h */,
+				D80238880FD8D6D800A0073C /* TLPhoto.m */,
+				D81A61430FD5E7810008EED3 /* PhotoSourceController.h */,
+				D81A61440FD5E7810008EED3 /* PhotoSourceController.m */,
+				D81A61470FD5EDC90008EED3 /* TimeOffsetController.h */,
+				D81A61480FD5EDC90008EED3 /* TimeOffsetController.m */,
+				D869CB720FD88AF900EE919A /* MetadataController.h */,
+				D869CB730FD88AF900EE919A /* MetadataController.m */,
+				D818FB0C0FBB3C3900E3207A /* ExportController.h */,
+				D818FB0D0FBB3C3900E3207A /* ExportController.m */,
+				D87DD7FB10B63BA800028199 /* TaskExport.h */,
+				D87DD7FC10B63BA800028199 /* TaskExport.m */,
+				D84BDF460F9D184D007DDE7E /* LaunchWindowController.h */,
+				D84BDF470F9D184D007DDE7E /* LaunchWindowController.m */,
+				D89239610FBC9DAC0059A1A8 /* TrackWaitWindowController.h */,
+				D89239620FBC9DAC0059A1A8 /* TrackWaitWindowController.m */,
+			);
+			name = Geotagalog;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Geotagalog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Tagalog */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE2200F2A89A7005C3B44 /* Mercatalog */,
+				080E96DDFE201D6D7F000001 /* Geotagalog */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Tagalog;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D8BA9499117CF87300EF9DAC /* LaunchHelper.applescript */,
+				D840B1A911373C44002476CE /* MetadataWorker.xcodeproj */,
+				D8BFE2CE0F2A8AF7005C3B44 /* lib_proj.h */,
+				D8BFE2C20F2A8AEE005C3B44 /* libproj4.xcodeproj */,
+				32CA4F630368D1EE00C91783 /* Geotagalog_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8D5C9FD108E68BB000F09D8 /* helpbook.css */,
+				D8CDE3FF0F78705100D7F111 /* Geotagalog.icns */,
+				D88441750FB109510032FC9F /* Geotagalog-NMEA.icns */,
+				D880A39410851C1400E2B145 /* Geotagalog-IGC.icns */,
+				D88441770FB109510032FC9F /* Geotagalog-GPX.icns */,
+				D88441760FB109510032FC9F /* Geotagalog-TCX.icns */,
+				D8B7823410050DDA00CC50A1 /* PhotoError.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				1DDD58150DA1D0A300B32029 /* MainMenu.xib */,
+				D827E71A109A627A00D75E14 /* Preferences.xib */,
+				D85522E80F4F32660011CD3B /* Launch.xib */,
+				D892395D0FBC9C0E0059A1A8 /* TracklogWait.xib */,
+				D8649AD00F2AA31D00BCD0EB /* Project.xib */,
+				D8B5ED910F3266690075C338 /* Export.xib */,
+				D85CAE1E0F81584200E26623 /* HelpSource */,
+				D894E0BD0F6B256400ADFD01 /* Help */,
+				D80857600F4F95FD00CED120 /* Fontin-Regular.ttf */,
+				D89868520F40BB4600D349B9 /* dsa_pub.pem */,
+				D89868540F40BB4A00D349B9 /* Acknowledgments.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8676FFF1080172400ADFBDD /* Accelerate.framework */,
+				D89866F20F40B76000D349B9 /* Sparkle.framework */,
+				D8216CA40F3401C600843521 /* Carbon.framework */,
+				D8BFE2FA0F2A8C56005C3B44 /* QuartzCore.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D840B1AA11373C44002476CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D840B1B111373C45002476CE /* MetadataWorker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D84BE0010F9D4BBA007DDE7E /* NMEA */ = {
+			isa = PBXGroup;
+			children = (
+				D84BE0020F9D4BC9007DDE7E /* TLNMEAFile.h */,
+				D84BE0030F9D4BC9007DDE7E /* TLNMEAFile.m */,
+				D84BE0060F9D4C3E007DDE7E /* TLNMEASentence.h */,
+				D84BE0070F9D4C3E007DDE7E /* TLNMEASentence.m */,
+				D89B66050F9E7FE800AC032E /* TLNMEAErrors.h */,
+				D89B66060F9E7FE800AC032E /* TLNMEAErrors.m */,
+				D89B66EC0F9EA7C700AC032E /* TLNMEASentenceDecoding.h */,
+				D89B66ED0F9EA7C700AC032E /* TLNMEASentenceDecoding.m */,
+				D81373C40FA169DA002C3B23 /* TLNMEAFileConversion.h */,
+				D81373C50FA169DA002C3B23 /* TLNMEAFileConversion.m */,
+				D81373CC0FA16C1F002C3B23 /* TLGPXFileConversion.h */,
+				D81373CD0FA16C1F002C3B23 /* TLGPXFileConversion.m */,
+			);
+			name = NMEA;
+			sourceTree = "<group>";
+		};
+		D85CAE1E0F81584200E26623 /* HelpSource */ = {
+			isa = PBXGroup;
+			children = (
+				D85CAE1F0F81584200E26623 /* Geotagalog help.xml */,
+				D85CAE210F81584200E26623 /* helpbook.xsl */,
+				D84A803C108E68F300EB825F /* helpbook.css */,
+				D84A803E108E68FE00EB825F /* Geotagalog16.png */,
+			);
+			path = HelpSource;
+			sourceTree = "<group>";
+		};
+		D87DD9C410B65BA200028199 /* Cocoa extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D80663660FBE3F2000F19653 /* NSFileManager+TLExtensions.h */,
+				D80663670FBE3F2000F19653 /* NSFileManager+TLExtensions.m */,
+				D8AF2014106EC47100C35A41 /* NSURL+TLExtensions.h */,
+				D8AF2015106EC47100C35A41 /* NSURL+TLExtensions.m */,
+				D87DD9C510B65BC600028199 /* NSDateFormatter+TLAdditions.h */,
+				D87DD9C610B65BC600028199 /* NSDateFormatter+TLAdditions.m */,
+			);
+			name = "Cocoa extensions";
+			sourceTree = "<group>";
+		};
+		D8BFE2200F2A89A7005C3B44 /* Mercatalog */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE24F0F2A8A26005C3B44 /* Basics */,
+				D8BFE2980F2A8A50005C3B44 /* Cocoa Basics */,
+				D8BFE2410F2A8A17005C3B44 /* Projection */,
+				D8BFE2670F2A8A3E005C3B44 /* Geometry */,
+				D8BFE2210F2A89FB005C3B44 /* Map */,
+				D8F7CB4F0F2BF8D2003C0C0B /* Model */,
+				D8F7CB5F0F2BF929003C0C0B /* View */,
+			);
+			name = Mercatalog;
+			sourceTree = "<group>";
+		};
+		D8BFE2210F2A89FB005C3B44 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE2220F2A89FB005C3B44 /* TLMapInfo.h */,
+				D8BFE2230F2A89FB005C3B44 /* TLMapLayer.h */,
+				D8BFE2240F2A89FB005C3B44 /* TLMapLayer+HostInternals.h */,
+				D8BFE2250F2A89FB005C3B44 /* TLMapLayer.m */,
+				D8BFE2260F2A89FB005C3B44 /* TLInteractiveMapLayer.h */,
+				D8BFE2270F2A89FB005C3B44 /* TLInteractiveMapLayer.m */,
+				D8BFE2280F2A89FB005C3B44 /* TLMapView.h */,
+				D8BFE2290F2A89FB005C3B44 /* TLMapView+HostInternals.h */,
+				D8BFE22A0F2A89FB005C3B44 /* TLMapView.m */,
+				D8BFE22B0F2A89FB005C3B44 /* TLGraticuleMapLayer.h */,
+				D8BFE22C0F2A89FB005C3B44 /* TLGraticuleMapLayer.m */,
+				D871532D10B32BD50089477D /* TLSolidMapLayer.h */,
+				D871532E10B32BD50089477D /* TLSolidMapLayer.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		D8BFE2410F2A8A17005C3B44 /* Projection */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE2420F2A8A17005C3B44 /* TLProjection.h */,
+				D8BFE2430F2A8A17005C3B44 /* TLProjection.c */,
+				D8BFE2440F2A8A17005C3B44 /* TLProjectionGeoid.h */,
+				D8BFE2450F2A8A17005C3B44 /* TLProjectionGeoidInternals.h */,
+				D8BFE2460F2A8A17005C3B44 /* TLProjectionGeoid.c */,
+				D8BFE2470F2A8A17005C3B44 /* TLProjectionParameters.h */,
+				D8BFE2480F2A8A17005C3B44 /* TLProjectionParametersInternal.h */,
+				D8BFE2490F2A8A17005C3B44 /* TLProjectionParameters.c */,
+				D8BFE24A0F2A8A17005C3B44 /* TLProjectionDataRepresentation.h */,
+			);
+			name = Projection;
+			sourceTree = "<group>";
+		};
+		D8BFE24F0F2A8A26005C3B44 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE2500F2A8A26005C3B44 /* TLPrimitiveTypes.h */,
+				D8BFE2510F2A8A26005C3B44 /* TLArray.h */,
+				D8BFE2520F2A8A26005C3B44 /* TLArray.c */,
+				D8BFE2530F2A8A26005C3B44 /* TLArrayTemplate.h */,
+				D8BFE2540F2A8A26005C3B44 /* TLPointerArray.h */,
+				D8BFE2550F2A8A26005C3B44 /* TLPointerArray.c */,
+				D8BFE2560F2A8A26005C3B44 /* TLToolbag.h */,
+				D8BFE2570F2A8A26005C3B44 /* TLToolbag.c */,
+				D8BFE2580F2A8A26005C3B44 /* TLFloat.h */,
+				D8BFE2590F2A8A26005C3B44 /* TLFloat.c */,
+				D8BFE25A0F2A8A26005C3B44 /* TLRandom.h */,
+				D8BFE25B0F2A8A26005C3B44 /* TLRandom.c */,
+			);
+			name = Basics;
+			sourceTree = "<group>";
+		};
+		D8BFE2670F2A8A3E005C3B44 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE27D0F2A8A3E005C3B44 /* Projecting Geometry */,
+				D8BFE2790F2A8A3E005C3B44 /* Geoid Geometry */,
+				D8BFE2710F2A8A3E005C3B44 /* Sphere Geometry */,
+				D8BFE2680F2A8A3E005C3B44 /* Plane Geometry */,
+			);
+			name = Geometry;
+			sourceTree = "<group>";
+		};
+		D8BFE2680F2A8A3E005C3B44 /* Plane Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE2690F2A8A3E005C3B44 /* TLSegment.h */,
+				D8BFE26A0F2A8A3E005C3B44 /* TLSegment.c */,
+				D8BFE26B0F2A8A3E005C3B44 /* TLPolygon.h */,
+				D8BFE26C0F2A8A3E005C3B44 /* TLPolygon.c */,
+				D8BFE26D0F2A8A3E005C3B44 /* TLMultiPolygon.h */,
+				D8BFE26E0F2A8A3E005C3B44 /* TLMultiPolygon.c */,
+				D8BFE26F0F2A8A3E005C3B44 /* TLGeometry.h */,
+				D8BFE2700F2A8A3E005C3B44 /* TLGeometry.c */,
+			);
+			name = "Plane Geometry";
+			sourceTree = "<group>";
+		};
+		D8BFE2710F2A8A3E005C3B44 /* Sphere Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE2720F2A8A3E005C3B44 /* TLCoordinate.h */,
+				D8BFE2730F2A8A3E005C3B44 /* TLCoordPolygon.h */,
+				D8BFE2740F2A8A3E005C3B44 /* TLCoordPolygon.c */,
+				D8BFE2750F2A8A3E005C3B44 /* TLMultiCoordPolygon.h */,
+				D8BFE2760F2A8A3E005C3B44 /* TLMultiCoordPolygon.c */,
+				D8BFE2770F2A8A3E005C3B44 /* TLCoordGeometry.h */,
+				D8BFE2780F2A8A3E005C3B44 /* TLCoordGeometry.c */,
+			);
+			name = "Sphere Geometry";
+			sourceTree = "<group>";
+		};
+		D8BFE2790F2A8A3E005C3B44 /* Geoid Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE27A0F2A8A3E005C3B44 /* TLPlanetPoint.h */,
+				D8BFE27B0F2A8A3E005C3B44 /* TLGeoidGeometry.h */,
+				D8BFE27C0F2A8A3E005C3B44 /* TLGeoidGeometry.c */,
+			);
+			name = "Geoid Geometry";
+			sourceTree = "<group>";
+		};
+		D8BFE27D0F2A8A3E005C3B44 /* Projecting Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE27E0F2A8A3E005C3B44 /* TLBounds.h */,
+				D8BFE27F0F2A8A3E005C3B44 /* TLExtent.h */,
+				D8BFE2800F2A8A3E005C3B44 /* TLExtent.c */,
+				D8BFE2810F2A8A3E005C3B44 /* CTProjection.h */,
+				D8BFE2820F2A8A3E005C3B44 /* CTProjection.m */,
+				D8BFE2830F2A8A3E005C3B44 /* TLProjectionInfo.h */,
+				D8BFE2840F2A8A3E005C3B44 /* TLProjectionInfo.c */,
+				D8BFE2850F2A8A3E005C3B44 /* TLProjectionGeometry.h */,
+				D8BFE2860F2A8A3E005C3B44 /* TLProjectionGeometry.m */,
+				D8BFE2870F2A8A3E005C3B44 /* TLProjectedDrawing.h */,
+				D8BFE2880F2A8A3E005C3B44 /* TLProjectedDrawing.c */,
+			);
+			name = "Projecting Geometry";
+			sourceTree = "<group>";
+		};
+		D8BFE2980F2A8A50005C3B44 /* Cocoa Basics */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE29D0F2A8A50005C3B44 /* TLCocoaToolbag.h */,
+				D8BFE29E0F2A8A50005C3B44 /* TLCocoaToolbag.m */,
+				D8BFE29F0F2A8A50005C3B44 /* TLSelectionManager.h */,
+				D8BFE2A00F2A8A50005C3B44 /* TLSelectionManager.m */,
+				D8BFE2A10F2A8A50005C3B44 /* TLTrackingZone.h */,
+				D8BFE2A20F2A8A50005C3B44 /* TLTrackingZone.m */,
+				D8BFE2A30F2A8A50005C3B44 /* TLTrackingManager.h */,
+				D8BFE2A40F2A8A50005C3B44 /* TLTrackingManager.m */,
+				D8BFE25C0F2A8A26005C3B44 /* TLMainThreadPerformer.h */,
+				D8BFE25D0F2A8A26005C3B44 /* TLMainThreadPerformer.m */,
+			);
+			name = "Cocoa Basics";
+			sourceTree = "<group>";
+		};
+		D8BFE2C30F2A8AEE005C3B44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE2CB0F2A8AEE005C3B44 /* liblibproj4.a */,
+				D8BFE2CD0F2A8AEE005C3B44 /* lproj */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8BFE37F0F2A950D005C3B44 /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFE3800F2A950D005C3B44 /* TLGPXNode.h */,
+				D8BFE3810F2A950D005C3B44 /* TLGPXNode.m */,
+				D8BFE3820F2A950D005C3B44 /* TLGPXFile.h */,
+				D8BFE3830F2A950D005C3B44 /* TLGPXFile.m */,
+				D8BFE3840F2A950D005C3B44 /* TLGPXWaypoint.h */,
+				D8BFE3850F2A950D005C3B44 /* TLGPXWaypoint.m */,
+				D8BFE3860F2A950D005C3B44 /* TLGPXTrackSegment.h */,
+				D8BFE3870F2A950D005C3B44 /* TLGPXTrackSegment.m */,
+				D8BFE3880F2A950D005C3B44 /* TLGPXTracklog.h */,
+				D8BFE3890F2A950D005C3B44 /* TLGPXTracklog.m */,
+			);
+			name = GPX;
+			sourceTree = "<group>";
+		};
+		D8C45B0D0FD98AF10068215F /* ICA */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4F5090FCB524200489C49 /* TLImageCapture.h */,
+				D8A4F50A0FCB524200489C49 /* TLImageCapture.m */,
+				D8E77D070F3400A9004DE35E /* TLImageCaptureManager.h */,
+				D8E77D060F3400A9004DE35E /* TLImageCaptureManager.m */,
+				D8E77D050F3400A9004DE35E /* TLImageCapturePhotoSource.h */,
+				D8E77D040F3400A9004DE35E /* TLImageCapturePhotoSource.m */,
+				D81A60B20FD5D1D50008EED3 /* TLImageCaptureItem.h */,
+				D81A60B30FD5D1D50008EED3 /* TLImageCaptureItem.m */,
+			);
+			name = ICA;
+			sourceTree = "<group>";
+		};
+		D8C45B150FD99A7B0068215F /* File */ = {
+			isa = PBXGroup;
+			children = (
+				D8C45B090FD98ABA0068215F /* TLFilePhotoSource.h */,
+				D8C45B0A0FD98ABA0068215F /* TLFilePhotoSource.m */,
+				D8C45B160FD99AA60068215F /* TLFileSourceItem.h */,
+				D8C45B170FD99AA60068215F /* TLFileSourceItem.m */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
+		D8D257140FA24ECE006D8B40 /* TCX */ = {
+			isa = PBXGroup;
+			children = (
+				D8D257150FA24EE2006D8B40 /* TLTCXFile.h */,
+				D8D257160FA24EE2006D8B40 /* TLTCXFile.m */,
+				D8D2573C0FA2613F006D8B40 /* TLTCXFileConversion.h */,
+				D8D2573D0FA2613F006D8B40 /* TLTCXFileConversion.m */,
+			);
+			name = TCX;
+			sourceTree = "<group>";
+		};
+		D8E81F410F2E58EA0078D028 /* Photo sources */ = {
+			isa = PBXGroup;
+			children = (
+				D8E81F330F2E50900078D028 /* TLPhotoSource.h */,
+				D8E81F340F2E50900078D028 /* TLPhotoSource.m */,
+				D8E06B6F0FD474CF00443EAA /* TLPhotoSourceItem.h */,
+				D8E06B700FD474CF00443EAA /* TLPhotoSourceItem.m */,
+				D8C45B0D0FD98AF10068215F /* ICA */,
+				D8C45B150FD99A7B0068215F /* File */,
+			);
+			name = "Photo sources";
+			sourceTree = "<group>";
+		};
+		D8F67E09108160CB000E41F4 /* IGC */ = {
+			isa = PBXGroup;
+			children = (
+				D8F67E0B108160D9000E41F4 /* TLIGCFile.h */,
+				D8F67E0C108160D9000E41F4 /* TLIGCFile.m */,
+				D880A1CA1084F6EE00E2B145 /* TLIGCFileConversion.h */,
+				D880A1CB1084F6EE00E2B145 /* TLIGCFileConversion.m */,
+				D8F67E4110816CC2000E41F4 /* TLLineParser.h */,
+				D8F67E4210816CC2000E41F4 /* TLLineParser.m */,
+			);
+			name = IGC;
+			sourceTree = "<group>";
+		};
+		D8F7CB4F0F2BF8D2003C0C0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8F7CB540F2BF90D003C0C0B /* TLLocation.h */,
+				D8F7CB550F2BF90D003C0C0B /* TLLocation.m */,
+				D8F7CB560F2BF90D003C0C0B /* TLTimestamp.h */,
+				D8F7CB570F2BF90D003C0C0B /* TLTimestamp.m */,
+				D8F7CB580F2BF90D003C0C0B /* TLWaypoint.h */,
+				D8F7CB590F2BF90D003C0C0B /* TLWaypoint.m */,
+				D8F7CB510F2BF8EC003C0C0B /* TLTrack.h */,
+				D8F7CB520F2BF8EC003C0C0B /* TLTrack.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D8F7CB5F0F2BF929003C0C0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8E820360F2E70F50078D028 /* TLMercatalogStyler.h */,
+				D8E820370F2E70F50078D028 /* TLMercatalogStyler.m */,
+				D8E8202B0F2E703C0078D028 /* TLMercatalogViewShared.h */,
+				D8E8202C0F2E704C0078D028 /* TLPhotoLayout.h */,
+				D8E8202D0F2E704C0078D028 /* TLPhotoLayout.m */,
+				D8E8203B0F2E71090078D028 /* TLPhotoLayer.h */,
+				D8E8203C0F2E71090078D028 /* TLPhotoLayer.m */,
+				D8E8203F0F2E711A0078D028 /* TLTrackLayer.h */,
+				D8E820400F2E711A0078D028 /* TLTrackLayer.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Geotagalog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Geotagalog" */;
+			buildPhases = (
+				D898670B0F40B7C500D349B9 /* CopyFiles */,
+				D8CDE4110F7870DC00D7F111 /* ShellScript */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8BFE2D50F2A8B14005C3B44 /* PBXTargetDependency */,
+				D840B1C811373C5E002476CE /* PBXTargetDependency */,
+			);
+			name = Geotagalog;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Tagalog;
+			productReference = 8D1107320486CEB800E47090 /* Geotagalog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Geotagalog" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Tagalog */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D8BFE2C30F2A8AEE005C3B44 /* Products */;
+					ProjectRef = D8BFE2C20F2A8AEE005C3B44 /* libproj4.xcodeproj */;
+				},
+				{
+					ProductGroup = D840B1AA11373C44002476CE /* Products */;
+					ProjectRef = D840B1A911373C44002476CE /* MetadataWorker.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Geotagalog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D840B1B111373C45002476CE /* MetadataWorker.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MetadataWorker.app;
+			remoteRef = D840B1B011373C45002476CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8BFE2CB0F2A8AEE005C3B44 /* liblibproj4.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibproj4.a;
+			remoteRef = D8BFE2CA0F2A8AEE005C3B44 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8BFE2CD0F2A8AEE005C3B44 /* lproj */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = lproj;
+			remoteRef = D8BFE2CC0F2A8AEE005C3B44 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82C3D7311387B370023C0C8 /* MainMenu.xib in Resources */,
+				D8649AD10F2AA31D00BCD0EB /* Project.xib in Resources */,
+				D8B5ED920F3266690075C338 /* Export.xib in Resources */,
+				D89868530F40BB4600D349B9 /* dsa_pub.pem in Resources */,
+				D89868550F40BB4A00D349B9 /* Acknowledgments.html in Resources */,
+				D85522E90F4F32660011CD3B /* Launch.xib in Resources */,
+				D80857610F4F95FD00CED120 /* Fontin-Regular.ttf in Resources */,
+				D894E0CC0F6B256400ADFD01 /* Help in Resources */,
+				D8CDE4000F78705100D7F111 /* Geotagalog.icns in Resources */,
+				D88441780FB109510032FC9F /* Geotagalog-NMEA.icns in Resources */,
+				D88441790FB109510032FC9F /* Geotagalog-TCX.icns in Resources */,
+				D884417A0FB109510032FC9F /* Geotagalog-GPX.icns in Resources */,
+				D892395E0FBC9C0E0059A1A8 /* TracklogWait.xib in Resources */,
+				D8B7823510050DDA00CC50A1 /* PhotoError.png in Resources */,
+				D880A39510851C1400E2B145 /* Geotagalog-IGC.icns in Resources */,
+				D8D5C9FE108E68BB000F09D8 /* helpbook.css in Resources */,
+				D827E71B109A627A00D75E14 /* Preferences.xib in Resources */,
+				D840B1B211373C49002476CE /* MetadataWorker.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8CDE4110F7870DC00D7F111 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/HelpSource/$(PRODUCT_NAME) help.xml",
+				"$(SRCROOT)/HelpSource/helpbook.css",
+				"$(SRCROOT)/HelpSource/helpbook.xsl",
+				"$(SRCROOT)/HelpSource/$(PRODUCT_NAME)16.png",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${SRCROOT}/HelpSource/\"\n\n# convert Help source to processed fileset\nxsltproc --stringparam application_name \"${PRODUCT_NAME}\" helpbook.xsl \"${PRODUCT_NAME} help.xml\"\n\n# extract files from fileset\nrm -rf ../Help/*\nmv index.html pages/ ../Help\ncp Geotagalog16.png ../Help/\ncp helpbook.css ../Help/\n\n# index help book\n/Developer/Applications/Utilities/Help\\ Indexer.app/Contents/MacOS/Help\\ Indexer ../Help \\\n  -TigerIndexing YES -GenerateSummaries T -Stopwords en -MinTermLength 3 -IndexAnchors YES -LogStyle 1\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				D8BFE1860F2A7E2C005C3B44 /* ProjectController.m in Sources */,
+				D8BFE2370F2A89FB005C3B44 /* TLMapLayer.m in Sources */,
+				D8BFE2380F2A89FB005C3B44 /* TLInteractiveMapLayer.m in Sources */,
+				D8BFE2390F2A89FB005C3B44 /* TLMapView.m in Sources */,
+				D8BFE23A0F2A89FB005C3B44 /* TLGraticuleMapLayer.m in Sources */,
+				D8BFE24B0F2A8A17005C3B44 /* TLProjection.c in Sources */,
+				D8BFE24C0F2A8A17005C3B44 /* TLProjectionGeoid.c in Sources */,
+				D8BFE24D0F2A8A17005C3B44 /* TLProjectionParameters.c in Sources */,
+				D8BFE25E0F2A8A26005C3B44 /* TLArray.c in Sources */,
+				D8BFE25F0F2A8A26005C3B44 /* TLPointerArray.c in Sources */,
+				D8BFE2600F2A8A26005C3B44 /* TLToolbag.c in Sources */,
+				D8BFE2610F2A8A26005C3B44 /* TLFloat.c in Sources */,
+				D8BFE2620F2A8A26005C3B44 /* TLRandom.c in Sources */,
+				D8BFE2630F2A8A26005C3B44 /* TLMainThreadPerformer.m in Sources */,
+				D8BFE2890F2A8A3E005C3B44 /* TLSegment.c in Sources */,
+				D8BFE28A0F2A8A3E005C3B44 /* TLPolygon.c in Sources */,
+				D8BFE28B0F2A8A3E005C3B44 /* TLMultiPolygon.c in Sources */,
+				D8BFE28C0F2A8A3E005C3B44 /* TLGeometry.c in Sources */,
+				D8BFE28D0F2A8A3E005C3B44 /* TLCoordPolygon.c in Sources */,
+				D8BFE28E0F2A8A3E005C3B44 /* TLMultiCoordPolygon.c in Sources */,
+				D8BFE28F0F2A8A3E005C3B44 /* TLCoordGeometry.c in Sources */,
+				D8BFE2900F2A8A3E005C3B44 /* TLGeoidGeometry.c in Sources */,
+				D8BFE2910F2A8A3E005C3B44 /* TLExtent.c in Sources */,
+				D8BFE2920F2A8A3E005C3B44 /* CTProjection.m in Sources */,
+				D8BFE2930F2A8A3E005C3B44 /* TLProjectionInfo.c in Sources */,
+				D8BFE2940F2A8A3E005C3B44 /* TLProjectionGeometry.m in Sources */,
+				D8BFE2950F2A8A3E005C3B44 /* TLProjectedDrawing.c in Sources */,
+				D8BFE2A70F2A8A50005C3B44 /* TLCocoaToolbag.m in Sources */,
+				D8BFE2A80F2A8A50005C3B44 /* TLSelectionManager.m in Sources */,
+				D8BFE2A90F2A8A50005C3B44 /* TLTrackingZone.m in Sources */,
+				D8BFE2AA0F2A8A50005C3B44 /* TLTrackingManager.m in Sources */,
+				D8BFE38A0F2A950D005C3B44 /* TLGPXNode.m in Sources */,
+				D8BFE38B0F2A950D005C3B44 /* TLGPXFile.m in Sources */,
+				D8BFE38C0F2A950D005C3B44 /* TLGPXWaypoint.m in Sources */,
+				D8BFE38D0F2A950D005C3B44 /* TLGPXTrackSegment.m in Sources */,
+				D8BFE38E0F2A950D005C3B44 /* TLGPXTracklog.m in Sources */,
+				D8BFE39C0F2A9D0A005C3B44 /* AppDelegate.m in Sources */,
+				D8F7CB530F2BF8EC003C0C0B /* TLTrack.m in Sources */,
+				D8F7CB5A0F2BF90D003C0C0B /* TLLocation.m in Sources */,
+				D8F7CB5B0F2BF90D003C0C0B /* TLTimestamp.m in Sources */,
+				D8F7CB5C0F2BF90D003C0C0B /* TLWaypoint.m in Sources */,
+				D8E81F350F2E50900078D028 /* TLPhotoSource.m in Sources */,
+				D8E8202E0F2E704C0078D028 /* TLPhotoLayout.m in Sources */,
+				D8E820380F2E70F50078D028 /* TLMercatalogStyler.m in Sources */,
+				D8E8203D0F2E71090078D028 /* TLPhotoLayer.m in Sources */,
+				D8E820410F2E711A0078D028 /* TLTrackLayer.m in Sources */,
+				D8E820A10F2E79410078D028 /* TLLocator.m in Sources */,
+				D8E77D080F3400A9004DE35E /* TLImageCapturePhotoSource.m in Sources */,
+				D8E77D090F3400A9004DE35E /* TLImageCaptureManager.m in Sources */,
+				D805B70B0F4E2FF800574947 /* TLMapBevel.m in Sources */,
+				D84BDF480F9D184D007DDE7E /* LaunchWindowController.m in Sources */,
+				D84BE0040F9D4BC9007DDE7E /* TLNMEAFile.m in Sources */,
+				D84BE0080F9D4C3E007DDE7E /* TLNMEASentence.m in Sources */,
+				D89B66070F9E7FE800AC032E /* TLNMEAErrors.m in Sources */,
+				D89B66EE0F9EA7C700AC032E /* TLNMEASentenceDecoding.m in Sources */,
+				D81373C60FA169DA002C3B23 /* TLNMEAFileConversion.m in Sources */,
+				D81373CE0FA16C1F002C3B23 /* TLGPXFileConversion.m in Sources */,
+				D8D257170FA24EE2006D8B40 /* TLTCXFile.m in Sources */,
+				D8D2573E0FA2613F006D8B40 /* TLTCXFileConversion.m in Sources */,
+				D89239630FBC9DAC0059A1A8 /* TrackWaitWindowController.m in Sources */,
+				D818FB0E0FBB3C3900E3207A /* ExportController.m in Sources */,
+				D80663680FBE3F2000F19653 /* NSFileManager+TLExtensions.m in Sources */,
+				D8A4F50B0FCB524200489C49 /* TLImageCapture.m in Sources */,
+				D8E06B710FD474CF00443EAA /* TLPhotoSourceItem.m in Sources */,
+				D81A60B40FD5D1D50008EED3 /* TLImageCaptureItem.m in Sources */,
+				D81A61450FD5E7810008EED3 /* PhotoSourceController.m in Sources */,
+				D81A61490FD5EDC90008EED3 /* TimeOffsetController.m in Sources */,
+				D869CB740FD88AF900EE919A /* MetadataController.m in Sources */,
+				D80238890FD8D6D800A0073C /* TLPhoto.m in Sources */,
+				D8C45B0B0FD98ABA0068215F /* TLFilePhotoSource.m in Sources */,
+				D8C45B180FD99AA60068215F /* TLFileSourceItem.m in Sources */,
+				D8F67E0D108160D9000E41F4 /* TLIGCFile.m in Sources */,
+				D8F67E4310816CC2000E41F4 /* TLLineParser.m in Sources */,
+				D880A1CC1084F6EE00E2B145 /* TLIGCFileConversion.m in Sources */,
+				D8AF2016106EC47100C35A41 /* NSURL+TLExtensions.m in Sources */,
+				D895D078109B99A800B7D35A /* PreferencesController.m in Sources */,
+				D871532F10B32BD50089477D /* TLSolidMapLayer.m in Sources */,
+				D87DD7FD10B63BA800028199 /* TaskExport.m in Sources */,
+				D87DD9C710B65BC600028199 /* NSDateFormatter+TLAdditions.m in Sources */,
+				D8BA94BB117CFB1500EF9DAC /* LaunchHelper.applescript in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D840B1C811373C5E002476CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MetadataWorker;
+			targetProxy = D840B1C711373C5E002476CE /* PBXContainerItemProxy */;
+		};
+		D8BFE2D50F2A8B14005C3B44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libproj4;
+			targetProxy = D8BFE2D40F2A8B14005C3B44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Dependencies\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Geotagalog_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "-lsqlite3";
+				PRODUCT_NAME = Geotagalog;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Dependencies\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Geotagalog_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "-lsqlite3";
+				PRODUCT_NAME = Geotagalog;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_OSAFLAGS = "-x";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = 4.2;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_OSAFLAGS = "-x";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				SEPARATE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Geotagalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Geotagalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

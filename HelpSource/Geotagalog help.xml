@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpbook>
+	<name>Geotagalog Help</name>
+	
+	<link href="overview"/>
+	<link href="using_tracklogs"/>
+	<link href="photo_sources"/>
+	<link href="setting_photo_locations"/>
+	<link href="export_iphoto"/>
+	
+	<page id="overview">
+		<name>Overview</name>
+		<summary>Learn what Geotagalog can do.</summary>
+		<content>
+			<p>
+				Geotagalog lets you <link href="using_tracklogs">open a tracklog</link> and then pick a <link href="photo_sources">source of photos</link>.
+				The <link href="setting_photo_locations">photo positions can be fine-tuned</link> along the tracklog using time adjustments.
+				The photos may be <link href="photo_preview">previewed in place</link> before <link href="export_iphoto">import into the current iPhoto library</link>.
+				</p>
+			<p>
+				Geotagalog 1.x does not tag photos after they are imported into your iPhoto library.
+				For the best workflow, set Geotagalog to launch when you connect a camera, and let Geotagalog import your photos into iPhoto for you.
+				</p>
+			</content>
+		</page>
+	
+	<page id="about_tracklogs">
+		<name>About tracklogs</name>
+		<content>
+			<p>
+				A tracklog is a record of where you have gone. Tracklogs are often gathered by a GPS device or a phone that collects many sample locations in memory as you travel about.
+				These sample locations are like pins in a map: the more pins you place, the better they could show the actual route you took.
+				</p>
+			
+			<p>
+				For automatic geotagging to work, each sample location should have a timestamp so that Geotagalog can guess where you were when you took each picture.
+				If a photo was taken at a time between two location samples, Geotagalog will place the photo at a predicted location using a sophisticated
+				interpolation algorithm. (Interpolation is like using a string to fill the gap between pins in a map.)
+				</p>
+			</content>
+		</page>
+	
+	<page id="using_tracklogs">
+		<name>Using tracklogs</name>
+		<summary>Getting started with supported tracklog files.</summary>
+		<content>
+			<p>
+				To use Geotagalog, you first need to open a <link href="about_tracklogs">tracklog</link> by clicking the "Open tracklog..." button in the welcome screen.
+				Once you have successfully opened a tracklog, Geotagalog will display it on a map so you can use it to geotag photos from a source.
+				</p>
+			
+			<p>
+				You may add multiple tracklog files to the map. Simply select multiple tracklogs when opening, use the "File > Open" menu to select another tracklog file,
+				or drag tracklog files to Geotagalog's map or Dock icon.
+				When prompted, select the "Add Tracks" option. The type of tracklog file does not matter: you can use a GPX file and an NMEA log file on the same map.
+				</p>
+			
+			<p>
+				Geotagalog supports tracklogs in several popular formats: the standard GPX format, NMEA 0183 logs, Garmin Training Center (.tcx) files, and FAI Gliding Commission (.igc) flight recordings.
+				If your tracking device does not let you directly access tracklogs in one of these formats, you may need to use other software to download and/or convert your tracklogs to a supported format.
+				</p>
+			</content>
+		</page>
+	
+	<page id="photo_sources">
+		<name>Photo sources</name>
+		<summary>Picking photos to geotag.</summary>
+		<content>
+			<p>
+				After opening a tracklog, choose a source of photos to geotag using the "Choose photo source..." pull-down button below the map. 
+				</p>
+			
+			<p>
+				Geotagalog can geotag photos directly from an attached camera or card reader. Make sure your device is connected, then pick it in the "Choose photo-source..." pull-down menu.
+				Using this workflow is the easiest way to GPS-enable your camera.
+				</p>
+			
+			<p>
+				Geotagalog can also use individual photos from disk. Click "Choose photo source..." and then pick "Choose files or folders..." in the pull-down menu.
+				Geotagalog will load all supported photos you choose, and will search folders and subfolders as well.
+				You may also drag photo files and folders directly to Geotagalog's map or Dock icon.
+				</p>
+			</content>
+		</page>
+	
+	<page id="setting_photo_locations">
+		<name>Setting photo locations</name>
+		<summary>Ways to change the position of photos on the map.</summary>
+		<content>
+			<p>
+				Geotagalog automatically geotags photos to tracklogs using the timestamps in your photos and in your tracklog. For the most accurate positioning,
+				you will need to make sure your camera's time zone and any slight error are set correctly in Geotagalog before importing.
+				As you change the camera <link href="setting_camera_time_zone">time zone</link> and <link href="setting_camera_error">error</link> settings,
+				Geotagalog will <link href="photo_preview">show a live preview</link> of each photo's location so you check the results.
+				</p>
+			
+			<p>
+				If any photos cannot be geolocated well with the provided track data, they may show up in light yellow on the map or disappear from the map completely.
+				When this happens, Geotagalog will enable the "Don't geotag when unsure of location" checkbox. You may use this to decide what to do with these photos.
+				</p>
+			</content>
+		</page>
+	
+	<page id="setting_camera_time_zone">
+		<name>Camera time zone setting</name>
+		<content>
+			<p>
+				To set the time zone, use the "Change time zone" button (if necessary) to display the "Camera time zone" configuration.
+				If your camera is set to the same time zone as your computer, select the "Same as computer" option.
+				</p>
+			
+			<p>
+				If your camera was set to a different time zone, you will need to manually select how many hours the photos' timestamps are offset from Greenwich Mean Time (GMT).
+				You may find information about time zone offsets on <a href="http://en.wikipedia.org/wiki/Time_zone">this page</a>.
+				</p>
+			
+			<p>
+				(Note: At this time, Geotagalog does not support time zones with non-hour offsets. If your camera's time zone includes a half-hour or quarter-hour offset,
+				consider setting your computer to the same time zone, or your camera to a different time zone.
+				Otherwise, you must use the fine error correction to add or subtract this non-hour part of the time zone offset.)
+				</p>
+			</content>
+		</page>
+	
+	<page id="setting_camera_error">
+		<name>Camera error</name>
+		<content>
+			<p>
+				Since most tracklog devices have automatically set clocks, Geotagalog assumes that the timestamps in your tracklog are very accurate.
+				However, your camera's clock may have been set slightly slow or fast. You may adjust this by pressing the "Change clock error" button (if necessary)
+				to display the "Camera clock error" configuration. Move the slider to set what clock error your camera had.
+				</p>
+				
+			<p>
+				Geotagalog displays waypoint markers with X symbols on the map. This may be useful when lining up photos taken at known locations.
+				Use the <link href="photo_preview">mouseover photo preview</link> to pick the correct photo thumbnail and adjust along the track until
+				it is lined up with the matching waypoint marker.
+				</p>
+			</content>
+		</page>
+	
+	<page id="photo_preview">
+		<name>Photo preview</name>
+		<content>
+			<p>
+				Geotagalog displays a live preview of your photos' locations on its map. To view thumbnails of these photos, move your mouse over the map.
+				All photos under the mouse cursor will be displayed provided there is room.
+				</p>
+			</content>
+		</page>
+	
+	<page id="export_iphoto">
+		<name>iPhoto import</name>
+		<summary>Details about importing into iPhoto.</summary>
+		<content>
+			<p>
+				When your photos look reasonably positioned, press the "Import" button to load them into your current iPhoto library.
+				Geotagalog does not modify your original photo files, so iPhoto will always import copies into its library, rather than referencing the original files.
+				</p>
+			
+			<p>
+				When photos are not geolocated well with the provided track data, Geotagalog will enable the "Don't geotag when unsure of location" checkbox.
+				Use this checkbox to decide whether these photos will be geotagged with the potential poor locations.
+				</p>
+			
+			<p>
+				If you decide to not geotag photos with unsure locations, or if your photo source includes non-photo files (such as videos and audio clips),
+				Geotagalog can also optionally these into iPhoto, although they will not be geotagged.
+				Select the "Include ungeotagged items in import" checkbox to copy non-photo files into your current iPhoto library as part of the import process.
+				</p>
+			
+			<p>
+				If you are using an unregistered (demo) version, Geotagalog will only import into iPhoto a limited number of the photos and items.
+				To remove this limitation, please <a href="http://calftrail.com/store">purchase a license key</a>.
+				</p>
+			</content>
+		</page>
+	</helpbook>
